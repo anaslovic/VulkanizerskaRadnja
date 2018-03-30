@@ -1,7 +1,7 @@
 package gume;
 /**
  * 
- * Klasa predstavlja automobilsku gumu
+ * Klasa predstavlja automobilsku gumu sa osnovnim karakteristikama
  * @author Ana Slovic
  * @version 1.0.0
  * 

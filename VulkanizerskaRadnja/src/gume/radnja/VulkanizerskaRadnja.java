@@ -6,7 +6,9 @@ import gume.AutoGuma;
 
 /**
  * 
- * Klasa predstavlja vulkanizersku radnju sa najosnovnijim funkcionalnostima
+ * Klasa predstavlja vulkanizersku radnju sa najosnovnijim funkcionalnostima:
+ * dodavanjem nove gume u asortiman i pretrazivanjem asortimana.
+ * Asortiman je implementiran kao lista guma.
  * @author Ana Slovic
  * @version 1.0.0
  * 

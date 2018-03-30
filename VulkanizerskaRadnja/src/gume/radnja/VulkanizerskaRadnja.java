@@ -38,16 +38,27 @@ public class VulkanizerskaRadnja {
 	 * 
 	 * @param markaModel Marka i model trazene gume
 	 * 
-	 * @return lista guma koje su trazene marke i modela
-	 * 
+	 * @return lista guma koje su trazene marke i modela ako takvih ima
+	 * @return null ako je markaModel null ili ako u listi
+	 * ne postoji guma sa trazenom markom i modelom
 	 */
 	public LinkedList<AutoGuma> pronadjiGumu(String markaModel) {
 		if (markaModel == null)
 			return null;
 		LinkedList<AutoGuma> novaLista = new LinkedList<AutoGuma>();
 		for (int i = 0; i < gume.size(); i++)
-			if (gume.get(i).equals(markaModel))
+			if (gume.get(i).getMarkaModel().equals(markaModel))
 				novaLista.add(gume.get(i));
+		if (novaLista.isEmpty())
+			return null;
 		return novaLista;
+	}
+	
+	/**
+	 * Vraca listu svih guma koje se nalaze u aranzmanu
+	 * @return listu guma
+	 */
+	public LinkedList<AutoGuma> getGume() {
+		return gume;
 	}
 }
